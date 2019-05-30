@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/idEdit"
+        android:title="Edit"
+        android:icon="@drawable/ic_edit_dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/idSettings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings_dp"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/idAccount"
+        android:title="Account"
+        android:icon="@drawable/ic_account_dp"
+        app:showAsAction="never"/>
+</menu>

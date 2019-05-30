@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorAccent"
     tools:context=".ProdutoActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/idToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        app:title="@string/app_name"></android.support.v7.widget.Toolbar>
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimaryDark"></android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,47 +31,145 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="14dp"
             android:src="@drawable/square" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="14dp"
+            android:layout_marginVertical="14dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Price:"
-                android:textColor="@color/colorAccent"
-                android:textSize="18dp"/>
-            <EditText
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                />
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
-
+                android:src="@drawable/line"
+                android:layout_marginVertical="10dp"/>
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Image ID:"
-                android:textColor="@color/colorAccent"
-                android:textSize="18dp"/>
-            <EditText
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                />
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
+                android:src="@drawable/line"
+                android:layout_marginVertical="10dp"/>
 
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-1dp"
+                    android:background="@color/colorAccent"
+                    android:text="Download"
+                    android:textSize="20dp"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Owner:"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdium enim vitae libero."
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginVertical="15dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_marginVertical="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/square"
+                android:layout_marginHorizontal="6dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/square"
+                android:layout_marginHorizontal="6dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/square"
+                android:layout_marginHorizontal="6dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/square"
+                android:layout_marginHorizontal="6dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/square"
+                android:layout_marginHorizontal="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>
